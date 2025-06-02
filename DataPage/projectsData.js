@@ -9,12 +9,29 @@ const projectsData =[
     },
     {
         
+        title:'React portfolio',
+        image:new URL ('../assets/projects/PortfolioIcon.png',import.meta.url).href,
+        description:'Full Responsive Website using ReactJs Html and Css to show it as portfolio of my work experience and personal projects.',
+        date:'November 2024',
+        'skills': ["React", "JavaScript"]
+    },
+    {
+        
+        title:'3D WebSite',
+        image:new URL ('../assets/projects/CatPage.png',import.meta.url).href,
+        description:'WebSite with Highlite Section of videos, 3D models, using ReactJS, useGSAP for animations and Sentry for data tracking full responsive',
+        date:'May 2025',
+        'skills': ["ReactViteJS", "TailwindCSS", 'Sentry'],
+        source: 'https://catpresentation.netlify.app/'
+    },
+    {
+        
         title:'Bubble Run',
         image:new URL ('../assets/projects/BubbleRun.png',import.meta.url).href,
         description:'I was the main programmer in this Endless Runner Game, developed in Unity using C#.',
         date:'1 July 2022 - 1 September 2022',
         'skills': ["Unity", "C#", "Github"],
-        source: "https://drive.google.com/file/d/1qY-aUQtQGqO_UR6zBWlS04628CzQ5Jnc/view?usp=drive_link"
+        demo: "https://drive.google.com/file/d/1qY-aUQtQGqO_UR6zBWlS04628CzQ5Jnc/view?usp=drive_link"
     },
    
     {
@@ -24,7 +41,7 @@ const projectsData =[
         description:'VR survival Videogame about a mecha pilot surviving enemy waves developed with Unity using C# ',
         date:'May 2022',
         'skills': ["Unity", "C#", "Github"],
-        source:"https://drive.google.com/file/d/110X3M957klv781ZgEMiVe6IGji39aZPl/view?usp=sharing"
+        demo:"https://drive.google.com/file/d/110X3M957klv781ZgEMiVe6IGji39aZPl/view?usp=sharing"
     },
     {
         
@@ -33,7 +50,7 @@ const projectsData =[
         description:'Programmer and Level designer in this Adventure / Horror videogame developed with Unity using C# ',
         date:'May 2021',
         'skills': ["Unity", "C#", "Github"],
-        source: "https://drive.google.com/file/d/1PsY8xnYLxc40cXbi8w3rjIhzRn6IcFEc/view?usp=sharing"
+        demo: "https://drive.google.com/file/d/1PsY8xnYLxc40cXbi8w3rjIhzRn6IcFEc/view?usp=sharing"
     },
     {
         
@@ -44,14 +61,7 @@ const projectsData =[
         'skills': ["Android Studio", "Flutter"]
     },
     
-    {
-        
-        title:'React portfolio',
-        image:new URL ('../assets/projects/React.png',import.meta.url).href,
-        description:'I made this page by myself using Html, Css and React to show it as portfolio.',
-        date:'November 2024',
-        'skills': ["React", "NodeJs"]
-    }
+    
 ]
 
 export const modalProjectsData =[

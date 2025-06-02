@@ -7,7 +7,7 @@ import { HistoryExperience } from '../../../DataPage/experienceData';
 
 export const Experience= ()=> {
   return <section className={styles.container} id='/experience'> 
-  <h2 className={styles.title}>Experience</h2>
+  <h2 className={styles.title}>Work Experience</h2>
   <div className={styles.content}>
     <div className={styles.skills}>{
       experienceData.map((skill, id)=>{

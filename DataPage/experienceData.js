@@ -65,7 +65,7 @@ export const HistoryExperience =[
     "organisation": "Quachic Games",
     "startDate": "Jun, 2022",
     "endDate": "Present",
-    "experiences": ['Main Unity programmer',"Worked on mobile Games Development", "Design and develop of gaming mechanics"],
+    "experiences": ['Lead Unity programmer',"Developed automated scripts to simplify commontasks", "Design and develop of gaming mechanics", 'Improve test scalability'],
     "imageSrc": new URL ('../assets/skills/Joal.png',import.meta.url).href
   },
   

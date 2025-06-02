@@ -25,7 +25,6 @@ export const ProjectCard= ({
         }
     }
 
-
   return (
     <div className={styles.container}>
         <img src={image} alt={` Image of ${title}`} 
@@ -49,14 +48,16 @@ export const ProjectCard= ({
             {/*<a href={demo} className={styles.link}>
                 Build
             </a>*/}
-            {
-                source &&(
-                    <a href={source} className={styles.build} download>
+            { 
+                source 
+                ? <a href={source} className={styles.build} download>
+                    Website
+                </a >
+                : demo ? 
+                <a href={demo} className={styles.build} download>
                     Download
-                </a >)
+                </a >: <a></a>
             }
-            
-            
             
         </div>
             <div className={styles.modalContent}>
@@ -84,9 +85,7 @@ export const ProjectCard= ({
                                 className={styles.link}> Download </a>)
                             }
                         </div>
-
                     </div>
-
                 </div>
             )
         }

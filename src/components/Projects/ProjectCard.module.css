@@ -2,7 +2,7 @@
 
 .container{
     display:flex;
-    height: 70vh;
+    height: 75vh;
     flex-direction: column;
     border-radius: 10px;
     background: #00bfa5;
@@ -13,7 +13,7 @@
     );
     box-shadow: 0 2px 14px 0 #017566;
     padding: 18px 24px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     max-width: 345px;
 }
 
