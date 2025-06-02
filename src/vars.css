@@ -1,0 +1,19 @@
+:root{
+    /*Page colours*/
+    --color-text: #e9f1fa;
+    --color-primary: #00bfa5;
+    --color--secondary: #19376d;
+    --color-dark: #04152d;
+    --color-bg: #0a0909;
+    --color-hover: #c44569;
+
+    /*Fonts*/
+    --font-roboto:'Roboto';
+}
+/* Color azul para la seccion de about #04152d/
+/*
+Negro: #0a0909
+Verde: #00bfa5
+Blanco azulito: #e9f1fa
+Rosa: #c44569
+*/
