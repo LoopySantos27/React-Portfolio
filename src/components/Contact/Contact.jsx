@@ -11,24 +11,24 @@ export const Contact = () => {
         </div>
         <ul className={style.links}>
             <li className={style.link}>
-                <a href='mailto:gerardodsc27@gmail.com'>
+                <a href='mailto:gerardodsc27@gmail.com' target='_blank'>
                     <img  src={footerImages.emailImage} alt='Email'/>
                 </a>
-                <a href='mailto:gerardodsc27@gmail.com'>gerardodsc27@gmail.com</a>
+                <a href='mailto:gerardodsc27@gmail.com' target='_blank'>gerardodsc27@gmail.com</a>
             </li>
             <li className={style.link}>
-                <a href='https://www.linkedin.com/in/gerardo-daniel-santos-cuevas-16382a1b8/'>
+                <a href='https://www.linkedin.com/in/gerardo-daniel-santos-cuevas-16382a1b8/' target='_blank'>
                     <img src={footerImages.linkedinIcon} alt='Linkedin Icon'/>
                 </a>
-                <a href='https://www.linkedin.com/in/gerardo-daniel-santos-cuevas-16382a1b8/'>
+                <a href='https://www.linkedin.com/in/gerardo-daniel-santos-cuevas-16382a1b8/' target='_blank'>
                 Linkedin.com/GerardoSantos
                 </a>
             </li>
             <li className={style.link}>
-                <a href='https://github.com/LoopySantos27'>
+                <a href='https://github.com/LoopySantos27' target='_blank'>
                     <img src={footerImages.gitIcon} alt='github Icon'/>
                 </a>
-                <a href='https://github.com/LoopySantos27'>
+                <a href='https://github.com/LoopySantos27' target='_blank'>
                 github.com/LoopySantos27</a>
             </li>
         </ul>

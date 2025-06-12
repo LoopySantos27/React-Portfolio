@@ -45,16 +45,14 @@ export const ProjectCard= ({
             })}
         </ul>
         <div className={styles.links}> 
-            {/*<a href={demo} className={styles.link}>
-                Build
-            </a>*/}
+            
             { 
                 source 
-                ? <a href={source} className={styles.build} download>
+                ? <a href={source} className={styles.build} download target='_blank'>
                     Website
                 </a >
                 : demo ? 
-                <a href={demo} className={styles.build} download>
+                <a href={demo} className={styles.build} download target='_blank'>
                     Download
                 </a >: <a></a>
             }
@@ -82,7 +80,7 @@ export const ProjectCard= ({
                             {
                                 currentIndex.projectlink&&(
                                 <a href={currentIndex.projectlink}
-                                className={styles.link}> Download </a>)
+                                className={styles.link} target='_blank'> Download </a>)
                             }
                         </div>
                     </div>

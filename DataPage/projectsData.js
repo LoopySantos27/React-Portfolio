@@ -25,6 +25,14 @@ const projectsData =[
         source: 'https://catpresentation.netlify.app/'
     },
     {
+        title:'Movie Catalog Website',
+        image:new URL ('../assets/projects/MovieLoopy.png',import.meta.url).href,
+        description:'WebSite created to use the information from the The moviedb API, full responsive, to show as portfolio for FrontEnd developer',
+        date:'June 2025',
+        'skills': ["ReactViteJS", "TailwindCSS", 'API'],
+        source: 'https://moviesloopy.netlify.app'
+    },
+    {
         
         title:'Bubble Run',
         image:new URL ('../assets/projects/BubbleRun.png',import.meta.url).href,
