@@ -23,7 +23,7 @@ function ModalProject({project, onClose}) {
             <h3 style={{color: '#c44569'}}>{project.colaborators}</h3>
             <div className={styles.bottomContent}>
                 <div style={{gap: 25, display: 'flex'}}>
-                    <button className={styles.btn} style={{background: '#00bfa5', }}>
+                    <button className={styles.btn}>
                       {
                         project.source ?
                         <a style={{textDecoration: 'none', color: 'white'}} href={project.source}>Website</a>
@@ -34,7 +34,7 @@ function ModalProject({project, onClose}) {
                       }
                       
                       </button>
-                      <button className={styles.btn} style={{background: '#c44569', }} onClick={onClose}>
+                      <button className={styles.btn2} onClick={onClose}>
                         Go Back</button>
                 </div>
                 <div className={styles.toolsSection}>
