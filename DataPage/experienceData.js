@@ -13,7 +13,7 @@ import Slack from '../assets/skills/slack.png'
 import Figma from '../assets/skills/figma.png'
 import Trello from '../assets/skills/trello.png'
 import Sentry from '../assets/skills/sentry.png'
-import GSAP from '../assets/skills/gsap.png'
+import GSAP from '../assets/skills/GSAP.png'
 
 export const unityIcon =unity;
 export const githubIcon = github;
