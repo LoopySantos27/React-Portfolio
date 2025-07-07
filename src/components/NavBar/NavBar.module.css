@@ -82,31 +82,38 @@
         z-index: 3;
         
     }
-
+    
     .menuBtn{
         display: block;
         cursor: pointer;
+        z-index: 5;
     }
 
     .menuItems{
         display: none;
+        position: absolute;
+        z-index: 0;
+        right: -10px;
+        top: -10px;
         flex-direction: column;
         align-items: center;
         gap: 13px;
         border-radius: 10px;
-        background: rgb(25,55,109);
-        background: linear-gradient(
-            0deg, 
-            rgba(25,55,109,0.2) 0%,
-            rgba(25,55,109,1)100%
-        );
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+        background: var(--color-primary) ;
+        padding-right: 15px;
+        padding-left: 50px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 50px 0 rgba(0,0,0, 0.85);
+        align-items: end;
+        border-right-style: outset;
+        border-width: 5px;
     }
     /*Este menu es para mostrarse cuando el jugador lo activa*/
     .menuOpen{
         display: flex;
-        z-index: 1;
+        z-index: 0;
     }
+    
 }
 

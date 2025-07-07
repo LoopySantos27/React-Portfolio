@@ -6,7 +6,7 @@ import { HistoryExperience } from '../../../DataPage/experienceData';
 
 
 export const Experience= ()=> {
-  return <section className={styles.container} id='/experience'> 
+  return <section className={styles.container} id='Experience'> 
   <h2 className={styles.title}>Work Experience</h2>
   <div className={styles.content}>
     <div className={styles.skills}>{
@@ -22,12 +22,13 @@ export const Experience= ()=> {
         {HistoryExperience.map((historyItem, id)=>{
           return(
             <li key={id} className={styles.historyItem} >
-              <img 
+              <img style={{width:'100px'}}
                 src={historyItem.imageSrc}
                 alt={`${historyItem.organisation} Logo`}
               />
               <div className={styles.historyItemDetails}>
-                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
+                <h3 className={styles.historyTitle}>
+  {`${historyItem.role} - ${historyItem.organisation}`}</h3>
                 <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                 <ul>{historyItem.experiences.map((experience, id)=>{
                     return <li key={id}>{experience}</li>

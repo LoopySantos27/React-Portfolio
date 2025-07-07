@@ -4,7 +4,7 @@ import style from './Contact.module.css'
 
 export const Contact = () => {
   return (
-    <footer id ='/contact' className={style.container}>
+    <footer id ='Contact' className={style.container}>
         <div className={style.text}>
             <h2>Contact</h2>
             <p>Reach out!</p>

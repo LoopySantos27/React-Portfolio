@@ -2,37 +2,78 @@
 
 .container{
     display:flex;
-    height: 75vh;
+    height: 334px;
     flex-direction: column;
     border-radius: 10px;
     background: #00bfa5;
     background: linear-gradient(
         180deg,
-        #00bfa5 0%,
-        #002e28 100%
+        #018675 0%,
+        #018675 60%,
+        #00594D 100%
     );
     box-shadow: 0 2px 14px 0 #017566;
     padding: 18px 24px;
-    margin-bottom: 60px;
-    max-width: 345px;
+    margin-bottom: 40px;
+    width: 300px;
+    align-items: center;
 }
 
+.imageBg{
+    width: 256px;
+    height: 127px;
+    background: black;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 9px;
+}
 .image{
-    margin-bottom: 26px;
-    width: 100%;
-    height: 170px;
-    border-radius: 15px;
+    width: 90%;
+    height: 127px;
 }
 
 .title{
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .description{
-    margin-top: 6px;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 400;
+    -webkit-text-stroke: 1px #ececec;
+	text-shadow: 0px 1px 2px #000000;
+    text-align: center;
+}
+
+.moreBtn{
+    width: 83px;
+    padding-block:8px ;
+    background: #39A697;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    text-align: center;
+    place-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.moreBtn:hover{
+    background: #E24F79;
+    border-width: 1px;
+    border-color:#AA3657 ;
+    cursor: pointer;
+}
+
+.moreBtn:focus{
+    color: #000000;
+    background: #000000;
+    border-width: 1px;
+    border-color:#ffffff ;
+    cursor: pointer;
+    font-size: large;
 }
 
 .skills{

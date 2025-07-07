@@ -4,7 +4,7 @@
     position:  relative;
     display:  flex;
     align-items:  center;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 49px;
     z-index: 1;
     margin-left:  10%;
@@ -17,12 +17,13 @@
     align-items: flex-start;
     color:  var(--color-text);
     z-index: 1;
+    width: 50%;
 }
 
 .title{
+    margin-top: 10vh;
     font-size: 72px;
     font-weight: 900;
-    margin-bottom: 33px;
     font-family: var(--font-roboto);
     background: linear-gradient( 
         90deg, 
@@ -34,11 +35,16 @@
     background-clip: text;
 }
 
+.subTitle{
+    color: var(--color-hover);
+    margin-bottom: 5vh;
+    font-size: 30px;
+}
+
 .description {
     font-size:  30px;
     font-family:  var(--font-roboto);
     margin-bottom: 52px;
-    width: 80%;
 }
 
 .contactInfo{
@@ -50,6 +56,7 @@
     font-weight: 600;
     padding: 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0,0.25);
+    margin-bottom: 10vh;
 }
 
 .contactInfo:hover{
@@ -61,54 +68,72 @@
 
 
 .heroImage{
-    width: 50%;
-    z-index: 1;
-    height: 40vh;
-    animation: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    z-index: 10;
+    height: 450px;
+    width: 450px;
     border-radius: 900px;
-    margin-top: 10vh;
+    position: absolute;
+    top: 50;
+    right: 20px;
+    
 }
 
 @keyframes floating{
     0%{
-        transform:  translate(0, 0px);
+        transform:  translate(0, -150px);
     }
     50%{
-        transform: translate(0,35px);
+        transform: translate(0,0px);
     }
     100%{
-        transform: translate(0, -0px);
+        transform: translate(0, -150px);
     }
 }
 .bottomBlur{
-    position:  absolute;
-    width: 75vw;
-    height: 22vw;
-    min-width: 250px;
-    top: 100px;
-    right: -50vw;
-    border:  764px;
+    position: static;
+    width: 500px;
+    height: 500px;
     background: rgba(25,191,165,0.7);
-    filter: blur(80px);
-    z-index: 0;
+    border-radius: 800px;
+    filter: blur(50px);
+}
+
+@media (max-width:1200px) {
+    .bottomBlur{
+        width: 350px;
+        height: 350px;
+    }
+    .heroImage{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width:830px){
     .container{
         flex-direction: column-reverse;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .content{
         align-items: center;
         text-align: center;
+        width: 80%;
     }
     .heroImage{
-        animation: none;
-        height: 25vh;
-        width: 50%;
-        margin-bottom: 5vh;
-        margin-top: 5vh;
+        position: static;
+        height: 200px;
+        width: 200px;
+        justify-self: center;
+        margin-bottom: -230px;
+        margin-top: 50px;
+    }
+    .bottomBlur{
+        top: 18px;
+        width: 250px;
+        right: inherit;
+        height: 250px;
+        filter: blur(20px);
+        border-radius: 100%;
     }
 }
