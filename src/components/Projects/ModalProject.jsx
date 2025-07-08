@@ -16,7 +16,7 @@ function ModalProject({project, onClose}) {
             {
                 project.video 
                 ? 
-                    <video className={styles.imgModal}  controls src={project.video} type="video/mp4" /> 
+                    <video  className={styles.imgModal}  controls src={project.video} type="video/mp4" /> 
                 :
                     <img className={styles.imgModal} src={project.image} />
             }
@@ -26,14 +26,24 @@ function ModalProject({project, onClose}) {
                     <button className={styles.btn}>
                       {
                         project.source ?
-                        <a style={{textDecoration: 'none', color: 'white'}} href={project.source}>Website</a>
+                        <a style={{textDecoration: 'none', color: 'white'}} href={project.source} target='_blank'>Website</a>
                         : project.demo?
-                          <a style={{textDecoration: 'none', color: 'white'}} href={project.demo}>Download</a>
+                          <a style={{textDecoration: 'none', color: 'white'}} href={project.demo} target='_blank'>Download</a>
                           :
                           <p>Unavailable</p>
                       }
                       
                       </button>
+                      {
+                        project.github ?
+                        <a  href={project.github} target='_blank'>
+                          <button className={styles.btnGithub}> Repository</button>
+                          </a>
+                        : <br />
+                      }
+                      
+
+                      
                       <button className={styles.btn2} onClick={onClose}>
                         Go Back</button>
                 </div>

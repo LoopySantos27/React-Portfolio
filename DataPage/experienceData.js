@@ -15,6 +15,9 @@ import Trello from '../assets/skills/trello.png'
 import Sentry from '../assets/skills/sentry.png'
 import GSAP from '../assets/skills/GSAP.png'
 
+import catsVideo from '../assets/videos/CatsPresentationVideo.mp4'
+import MovieLoopyVideo from '../assets/videos/MovieLoopyVideo.mp4'
+
 export const unityIcon =unity;
 export const githubIcon = github;
 export const vsIcon = vs;
@@ -32,6 +35,8 @@ export const trelloIcon = Trello;
 export const sentryIcon = Sentry;
 export const gsapIcon = GSAP;
 
+export const catsVideoModal = catsVideo;
+export const movieLoopyModal = MovieLoopyVideo;
 
 const experienceData =[
     {

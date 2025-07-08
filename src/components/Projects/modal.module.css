@@ -28,6 +28,8 @@
 .headers{
     margin-block: 2rem;
     margin-inline: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .headers p{
@@ -59,6 +61,21 @@
     background: #006b5d;
 }
 
+.btnGithub{
+    padding: 1rem;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background: #2e63c5;
+}
+
+.btnGithub:hover{
+    background: #0c1b36;
+}
+
 .btn2{
     padding: 1rem;
     border: none;
@@ -78,6 +95,7 @@
     height: 432px;
     border-radius: 10px;
     margin-block: 1vh;
+    align-self: center;
 }
 
 .toolsSection{
@@ -106,7 +124,7 @@
         height: 40px;
     }
 }
-@media (max-width:700px) {
+@media (max-width:1000px) {
     .modalContainer{
         width: 100vw;
         height: 100vh;

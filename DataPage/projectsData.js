@@ -14,7 +14,9 @@ import {
     figmaIcon,
     trelloIcon,
     sentryIcon,
-    gsapIcon
+    gsapIcon,
+    catsVideoModal,
+    movieLoopyModal
 } from './experienceData'
 
 const projectsData =[
@@ -25,7 +27,12 @@ const projectsData =[
 
         image:new URL ('../assets/projects/seren.png',import.meta.url).href,
         description: "Lead programmer of a 2D Narrative, Musical, Adventure game developed in Unity using C#.",
-        fullDescription: `I can't show as much as a would like to, but i can tell you about it. Seren is an Adventure / Narrative videogame where the main character use the music to pass through the game. The main mechanics that i developed consist in: Play music, Deploy dialogues, An Anxiety Mechanic, Input Player, Sound & Ilumination`,
+        fullDescription: `Seren is a story-driven adventure game developed in Unity, centered around a teenage girl navigating life with social anxiety. Her journey unfolds through her passion for music, combining emotional storytelling with interactive gameplay.
+        As the lead developer, I was responsible for designing and implementing key gameplay systems, including;
+        A custom dialogue system, the level progression mechanics, music-based interaction features and so on.
+
+        I also developed automated tools and reusable code to streamline development, improve testing efficiency, 
+        and increase scalability across the project.`,
         
         date:'2 July 2023 - Actual',
         video:new URL ('../assets/videos/serenvideo.mp4',import.meta.url).href,
@@ -41,7 +48,8 @@ const projectsData =[
 
         image:new URL ('../assets/projects/PortfolioIcon.png',import.meta.url).href,
         description:'Full Responsive Website using ReactJs Html and Css to expose it as my personal portfolio',
-        fullDescription: ``,
+        fullDescription: `This is my firs React project, developed With React Native, using Vite for compilation and 
+        CSS for styling. It's full responsive and is a practice to use the React Hooks, props management and Web Design `,
 
         source: 'https://gerardosantos.netlify.app',
         date:'November 2024',
@@ -56,10 +64,12 @@ const projectsData =[
 
         image:new URL ('../assets/projects/CatPage.png',import.meta.url).href,
         description:'Full responsiveWebSite with Highlite Section of videos, 3D models, and data tracking ',
-        fullDescription: ``,
+        fullDescription: `This page was developed as a Landing Page to show a product, in this case I used it to present
+        Cats, in a History, a Model and some sections just to get Fun. It was styled with Tailwind v4 and used Sentry
+        for error data tracking. Also The page contains animations and smooth transitions created from the GSAP library`,
 
         date:'May 2025',
-        
+        video: catsVideoModal,
         source: 'https://catpresentation.netlify.app/',
         tag: 'Web',
         github: 'https://github.com/LoopySantos27/CatsPresentation',
@@ -72,8 +82,12 @@ const projectsData =[
 
         image:new URL ('../assets/projects/MovieLoopy.png',import.meta.url).href,
         description:'Full responsive WebSite created as a movie catalog using data from the The moviedb API.',
+        fullDescription: `This is a full responsive Website developed to fetch the data from an API, in this case
+        Themodiedb, using real data without the necesity of update it when the catalog changes. The movies are separated by
+        categories, it can be filtered by rating and ordering by ascendant or descendant. I use Tailwind for stylish and responsive design.`,
         date:'June 2025',
 
+        video: movieLoopyModal,
         source: 'https://moviesloopy.netlify.app',
         tag: 'Web',
         github: 'https://github.com/LoopySantos27/MovieLoopy',
